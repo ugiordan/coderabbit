@@ -1,0 +1,12 @@
+# Central CodeRabbit configuration - TEST
+language: "en-US"
+early_access: false
+
+reviews:
+  profile: chill
+  poem: false
+
+  tools:
+    semgrep:
+      enabled: true
+      config_file: "semgrep.yaml"
