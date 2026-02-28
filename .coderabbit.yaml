@@ -79,12 +79,11 @@ reviews:
     # ------------------------------------------------------------------------
     # What: Custom SAST rules for your codebase
     # Config: Repository-specific semgrep rules (installed by plugin)
-    # Note: CodeRabbit requires config_file - semgrep won't run without it
+    # Note: config_file resolves relative to each scanned repo, not the central coderabbit repo.
+    # Each RHOAI repo must have .github/config/semgrep.yaml deployed locally.
     semgrep:
       enabled: true
-      # Note: config_file resolves relative to each scanned repo, not the central coderabbit repo.
-      # For repos with custom semgrep rules, add .github/config/semgrep.yaml to that repo.
-      # Without config_file, semgrep runs with built-in default rules.
+      config_file: ".github/config/semgrep.yaml"
 
     # ------------------------------------------------------------------------
     # HIGH-PERFORMANCE SAST - OpenGrep (NEW in v2.4.0)
