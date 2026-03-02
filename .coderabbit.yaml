@@ -66,6 +66,9 @@ reviews:
     cppcheck:
       enabled: true
 
+    golangci-lint:
+      enabled: true
+
     sqlfluff:
       enabled: true
 
