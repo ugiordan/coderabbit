@@ -37,7 +37,7 @@ reviews:
     gitleaks:
       enabled: true
 
-    truffleHog:
+    trufflehog:
       enabled: true
 
     # SAST - Both enabled to test for duplicate findings
